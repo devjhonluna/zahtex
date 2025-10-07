@@ -5,6 +5,8 @@
 
 @utility hero-img{
     @apply bg-repeat bg-cover bg-center w-full h-screen;
+    --hero-bg: url("../../assets/img/hero-zahtex.webp");
+    background-image: var(--hero-bg);
 }
 
 @utility card-group-flex{
