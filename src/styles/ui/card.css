@@ -1,0 +1,22 @@
+@layer components{
+    .card{
+        @apply flex items-center overflow-hidden rounded-xl;
+        flex-direction: var(--card-d,column);
+    }
+}
+
+@utility card-body{
+    @apply flex flex-col gap-2;
+    flex: 1 1 auto;   
+    padding: var(--card-p, 1.5rem);
+    font-size: var(--card-fs, .875rem);
+    font-weight: var(--card-w,400);
+    :where(p){
+      @apply grow;
+    }
+}
+
+
+@utility card-side{
+  --card-d:row;
+}

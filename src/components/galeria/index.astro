@@ -1,0 +1,24 @@
+<section id="galería"
+  class="p-5 @container gap-2 flex flex-col items-center"
+  x-data="gallery"
+>
+  <h2 class="text-title text-center font-medium font-nunito">Galería</h2>
+  <ul class="carrusel gap-2.5 w-72 @min-2xl:w-144 @min-4xl:w-216 group/item">
+    <template x-for="slide in slides">
+      <li
+        class="carrusel-item animate-scroll-infinite group-hover/item:pause w-full @min-2xl:w-1/2 @min-4xl:w-1/3 *:object-cover *:h-full"
+      >
+        <img loading="lazy" :src="slide.image.src" :alt="slide.alt" />
+      </li>
+    </template>
+
+    <template x-for="slide in slides" aria-hidden="true">
+      <li
+        class="carrusel-item animate-scroll-infinite group-hover/item:pause w-full @min-2xl:w-1/2 @min-4xl:w-1/3
+*:object-cover *:h-full"
+      >
+        <img loading="lazy" :src="slide.image.src" :alt="slide.alt" />
+      </li>
+    </template>
+  </ul>
+</section>

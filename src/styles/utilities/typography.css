@@ -1,0 +1,15 @@
+@theme {
+
+    /*Font-sizes*/
+    --text-header:3.25rem;
+    --text-title: 2rem;
+    --text-header-fluid: clamp(var(--text-title),1.6486rem + 1.7794vw, var(--text-header));
+    --text-subtitle: 1.25rem;
+    --text-body: 1rem;
+    --text-body-fluid: clamp(var(--text-body), 0.9297rem + 0.3559vw, var(--text-subtitle));
+    --text-label: .875rem;
+
+    /* Font Families */
+    --font-merriwather: 'Merriweather', serif;
+    --font-nunito:'Nunito', sans-serif;
+}

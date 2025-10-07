@@ -1,47 +1,29 @@
-# Astro Starter Kit: Minimal
+# 🧵 Sitio Web - Taller de Ensamble y Corte ZAHTEX
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Este proyecto consiste en el desarrollo de la página web para un taller de confección que ofrece servicios especializados de ensamble y corte de prendas de vestir para clientes particulares y empresas.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## ✨ Acerca del Proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+El sitio web tiene como objetivo principal servir como punto de contacto digital para el taller, permitiendo:
 
-## 🚀 Project Structure
+🎯 Captar nuevos clientes interesados en servicios de sastrería y confección.
 
-Inside of your Astro project, you'll see the following folders and files:
+ℹ️ Mostrar los servicios ofrecidos de manera clara y profesional.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+📞 Facilitar el contacto a través de un formulario fácil de usar, teléfono y dirección.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+🖼️ Exhibir un portafolio o galería de trabajos realizados para demostrar calidad y experiencia.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🚀 Tecnologías Utilizadas
 
-Any static assets, like images, can be placed in the `public/` directory.
+Este sitio web está construido con las siguientes tecnologías para garantizar un rendimiento óptimo y una excelente experiencia de usuario:
 
-## 🧞 Commands
+Framework: Astro JS - Framework web para crear sitios rápidos y optimizados.
 
-All commands are run from the root of the project, from a terminal:
+Estilos: Tailwind CSS - Framework de CSS utilitario para diseñar interfaces de manera rápida y consistente.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Interactividad: Alpine JS - Para la interactividad del lado del cliente como menús desplegables, carruseles y otras interacciones.
 
-## 👀 Want to learn more?
+Responsividad: Diseño "Mobile-First" que asegura una visualización perfecta en cualquier dispositivo.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Rendimiento: Generación de sitios estáticos optimizados, imágenes comprimidas y carga ultrarrápida gracias a Astro.

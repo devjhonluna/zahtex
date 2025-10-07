@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@import "./utilities/index.css";
+@import "./ui/index.css";
+
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+}
+

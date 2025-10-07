@@ -1,0 +1,27 @@
+@layer components{
+    .navbar{
+        align-items: center;
+        width: 100%;       
+        padding: .5rem;
+        display: flex;
+        position: relative;
+    }
+}
+
+@utility navbar-links{
+    @apply hidden sm:flex flex-row;
+}
+
+@utility navbar-mobile{
+    @apply sm:hidden;
+    &:is(.navbar-links){
+        @apply fixed top-12;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@utility navbar-sticky{
+    position: sticky;
+    top: 0;
+}

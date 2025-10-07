@@ -1,0 +1,66 @@
+<header x-data="{ atTop :  true }" @scroll.window="atTop = window.pageYOffset>200?false:true" class="fixed top-0 z-20 w-full " :class="(atTop === false)?'bg-background text-foreground shadow-md shadow-foreground/25': 'text-foreground'" >
+  <nav
+    class="navbar navbar-sticky justify-between gap-2.5"
+    x-data="{isOpen:false}"
+    @click.away="isOpen=false"
+    >
+    <a class="text-body font-nunito font-light" href="#">ZAHTEX</a>
+    <ul class="navbar-links gap-4 *:font-light *:font-merriwather">
+      <li ><a href="#acerca" class="link link-hover link-fill-center after:bg-current">Quienes Somos</a></li>
+      <li ><a href="#servicios" class="link link-hover link-fill-center after:bg-current">Nuestros Servicios</a></li>
+      <li ><a href="#galería" class="link link-hover link-fill-center after:bg-current">Galería</a></li>
+
+    </ul>
+    <div class="navbar-mobile">
+      <button class="w-6 *:stroke-current "  type="button" @click="isOpen=!isOpen" :aria-expanded="isOpen" aria-label="nav-btn" >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 10 10"
+          stroke-width=".6"
+          fill="rgba(0,0,0,0)"
+          stroke-linecap="round"
+          style="cursor: pointer"
+        >
+          <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+            <animate
+              dur="0.2s"
+              attributeName="d"
+              values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7"
+              fill="freeze"
+              begin="start.begin"></animate>
+            <animate
+              dur="0.2s"
+              attributeName="d"
+              values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7"
+              fill="freeze"
+              begin="reverse.begin"></animate>
+          </path>
+          <rect width="10" height="10" stroke="none">
+            <animate dur="2s" id="reverse" attributeName="width" begin="click"
+            ></animate>
+          </rect>
+          <rect width="10" height="10" stroke="none">
+            <animate
+              dur="0.001s"
+              id="start"
+              attributeName="width"
+              values="10;0"
+              fill="freeze"
+              begin="click"></animate>
+            <animate
+              dur="0.001s"
+              attributeName="width"
+              values="0;10"
+              fill="freeze"
+              begin="reverse.begin"></animate>
+          </rect>
+        </svg>
+      </button>
+      <ul x-show="isOpen" class="fixed top-11 left-0 right-0 p-4 grid gap-4 *:font-light *:font-merriwather" x-transition:enter="transition motion-reduce:transition-none ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition motion-reduce:transition-none ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full" :class="(atTop === false)?'bg-white text-blue-950 shadow-md': 'bg-transparent text-current'" >
+        <li ><a href="#acerca" class="link link-hover link-fill-center after:bg-current">Quienes Somos</a></li>
+        <li ><a href="#servicios" class="link link-hover link-fill-center after:bg-current ">Nuestros Servicios</a></li>
+        <li ><a href="#galería" class="link link-hover link-fill-center after:bg-current">Galería</a></li>    
+      </ul>
+    </div>
+    </nav>
+</header>

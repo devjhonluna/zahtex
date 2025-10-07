@@ -1,0 +1,121 @@
+@layer components {
+    .btn {
+      @apply inline-flex shrink-0 cursor-pointer flex-nowrap items-center justify-center gap-x-1.5 text-center align-middle outline-offset-2 select-none rounded-lg transition-all duration-300;
+      position: relative;
+      font-size: var(--fontsize, 0.875rem);
+      font-weight: 500;
+      height: var(--size);
+      padding-inline: var(--btn-p);
+      z-index: 1;      
+      --btn-p: 0.5rem;
+      --size: calc(var(--spacing, 0.25rem) * 10);
+      &::before{
+          content: var(--tw-content);
+          position: absolute;
+          z-index: -1;
+          inset: 0;
+          border-radius: .5rem;
+      }     
+    }
+  }
+  
+  @utility btn-outline {
+    @apply border overflow-hidden;
+    z-index: 1;
+    &::before {
+      content: var(--tw-content);
+      position: absolute;
+      z-index: -1;
+      transition: .5s ease-in-out;
+    }
+    &:where(.btn-outline-fill-up,.btn-outline-fill-left){
+      &::before{
+        @apply bottom-0 left-0;
+      }
+    }
+    &:where(.btn-outline-fill-up,.btn-outline-fill-down){
+      &:hover{
+        &::before{
+          height:100%;
+        }
+      }
+    }
+    &:where(.btn-outline-fill-left,.btn-outline-fill-right){
+      &:hover{
+        &::before{
+          width:100%;
+        }
+      }
+    }
+  }
+  
+  @utility btn-outline-fill-up{
+    &::before{
+      @apply h-0 w-full;
+    }  
+  }
+  
+  @utility btn-outline-fill-down{
+    &::before{
+      @apply top-0 left-0 h-0 w-full;
+    }  
+  }
+  
+  @utility btn-outline-fill-left{
+    &::before{
+      @apply h-full w-0;
+    } 
+  }
+  
+  @utility btn-outline-fill-right{
+    &::before{
+      @apply bottom-0 right-0 h-full w-0;
+    }  
+  }
+  
+  @utility btn-sm {
+    --fontsize: var(--text-lv-1);
+    --btn-p: 0.75rem;
+    --size: calc(var(--spacing, 0.25rem) * 8);
+  }
+  
+  @utility btn-md {
+    --fontsize: var(--text-lv-2);
+    --btn-p: 1rem;
+    --size: calc(var(--spacing, 0.25rem) * 10);
+  }
+  
+  @utility btn-lg {
+    --fontsize: var(--text-lv-3);
+    --btn-p: 1.25rem;
+    --size: calc(var(--spacing, 0.25rem) * 12);
+  }
+  
+  @utility btn-square {
+    @apply px-0;
+    height: var(--size);
+    width: var(--size);
+  }
+  
+  @utility btn-circle {
+    @apply rounded-full px-0;
+    height: var(--size);
+    width: var(--size);
+  }
+  
+  @utility btn-pilled {
+    @apply rounded-full;
+  }
+  
+  @utility btn-wide {
+    @apply w-full max-w-64;
+  }
+  
+  @utility btn-full {
+    @apply w-full;
+  }
+  
+  @utility btn-fit {
+    @apply w-fit;
+  }
+  

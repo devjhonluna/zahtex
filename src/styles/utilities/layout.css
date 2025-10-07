@@ -1,0 +1,12 @@
+@utility pancake{
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+@utility hero-img{
+    @apply bg-repeat bg-cover bg-center w-full h-screen;
+}
+
+@utility card-group-flex{
+    @apply flex justify-center items-center flex-wrap;
+}

@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets";
+import acercafoto from "@assets/img/acerca-foto.webp";
+---
+
+<section class="grid place-items-center-safe px-2 py-4 sm:p-4" id="acerca">
+    <figure
+      class="card card-side flex-wrap rounded-none max-w-3xl gap-2 min-sm:gap-4 *:min-h-64"
+    >
+      <picture class="flex-[1_1_200px]">
+        <Image src={acercafoto} alt="trabajo en la empresa" />
+      </picture>
+      <figcaption class="card-body flex-[2_1_376px] p-3 sm:p-6 text-center sm:text-left">
+        <h2 class="text-title font-medium font-nunito">¿Quienes Somos?</h2>
+        <p class="text-body-fluid font-merriwather">
+          Somos un equipo comprometido en elaborar prendas de vestir con calidad y cumplimiento, ofreciendo un servicio de ensamble de acuerdo a la necesidad del cliente.
+        </p>
+      </figcaption>
+    </figure>
+  </section>

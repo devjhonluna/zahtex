@@ -1,0 +1,23 @@
+@layer components {
+  .carrusel {
+    display: flex;
+    scrollbar-width: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    transition: 0.5s;
+    margin: 2.25rem auto;
+    &:has(.animate-scroll-infinite) {
+      &:hover {
+        > .carrusel-item:not(:hover) {
+          filter: grayscale(1) blur(2px);          
+        }
+      }
+    }
+  }
+  .carrusel-item {
+    box-sizing: content-box;
+    scroll-snap-align: start;
+    flex: none;
+    display: flex;
+  }
+}

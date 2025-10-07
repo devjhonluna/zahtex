@@ -1,16 +1,31 @@
 ---
-
+import "@styles/global.css";
+import "@fontsource-variable/nunito";
+import "@fontsource-variable/merriweather";
+import BaseLayout from "@/Layout/BaseLayout.astro";
+import MainLayout from "@/Layout/MainLayout.astro";
+import Header from "@components/header/index.astro";
+import Hero from "@components/hero/index.astro";
+import QuienesSomos from "@components/quienes somos/index.astro";
+import Contacto from "@components/contacto/index.astro";
+import Galeria from "@components/galeria/index.astro";
+import Servicios from "@components/servicios/index.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  className="pancake "
+  title="ZAHTEX"
+  description="Taller de Ensamble y corte de prendas de vestir"
+>
+  <Header />
+  <MainLayout>
+    <Hero />
+    <QuienesSomos />
+    <Servicios />
+    <Galeria />
+    <Contacto />
+  </MainLayout>
+  <footer class="text-center text-label-1 font-bold font-merriwather">
+    © 2024 DEVJL™-Todos los Derechos reservados.
+  </footer>
+</BaseLayout>

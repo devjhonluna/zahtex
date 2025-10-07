@@ -1,0 +1,32 @@
+---
+import zahtexLogo from "@assets/img/Zahtex.webp";
+import { Image } from "astro:assets";
+---
+
+<section class="hero-img bg-[url(./src/assets/img/hero-zahtex.webp)]">
+  <div
+    class="bg-linear-to-b from-background/25 to-background/60 w-full h-screen flex items-center"
+  >
+    <article
+      class="grid place-items-center text-white mx-auto gap-4 p-2 sm:p-8"
+    >
+      <picture class="*:w-48 *:sm:w-64 ">
+        <Image src={zahtexLogo} alt="logo" />
+      </picture>
+      <h1 class="text-header-fluid text-center font-nunito font-bold">
+        Taller de Ensamble y corte de prendas de vestir
+      </h1>
+      <div class="flex flex-wrap gap-4">
+        <a
+          class="btn btn-full sm:btn-fit btn-outline before:bg-foreground hover:text-background hover:border-foreground btn-outline-fill-up btn-md"
+          href="#servicios">Nuestros Servicios</a
+        >
+        <a
+          class="btn btn-full sm:btn-fit btn-md bg-foreground text-background hover:before:opacity-15
+          before:bg-foreground hover:before:animate-ping  "
+          href="#contacto">Contacto</a
+        >
+      </div>
+    </article>
+  </div>
+</section>

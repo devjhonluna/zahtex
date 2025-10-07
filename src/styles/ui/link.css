@@ -1,0 +1,45 @@
+@layer components {
+    .link {
+      @apply inline-flex justify-center items-center text-center align-middle cursor-pointer underline;
+      position: relative;
+    }
+  }
+  
+  @utility link-hover {
+    @apply no-underline;
+    &::after {
+      @apply block h-0.5 -bottom-0.5;
+      content: var(--tw-content);
+      position: absolute;
+      transition: 0.5s ease-in-out;
+    }
+    &:where(.link-fill-left, .link-fill-right, .link-fill-center) {
+      &::after {
+        width: 0%;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  @utility link-fill-left{
+      &::after{
+        left: 0;   
+      }    
+    }
+    
+    @utility link-fill-right{
+      &::after{
+        right: 0;      
+      }  
+    }
+    
+    @utility link-fill-center{
+      &::after{
+        bottom: 0;
+      } 
+    }
+
