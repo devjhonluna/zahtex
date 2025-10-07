@@ -3,10 +3,15 @@
     grid-template-rows: auto 1fr auto;
 }
 
-@utility hero-img{
-    @apply bg-repeat bg-cover bg-center w-full h-screen;
-    --hero-bg: url("../../assets/img/hero-zahtex.webp");
-    background-image: var(--hero-bg);
+@utility hero-wrapper{
+    @apply relative w-full h-svh;
+    & .hero-video{
+        @apply w-full h-full object-cover;
+    }
+    & .hero-content{
+        @apply absolute inset-0 grid place-items-center text-white mx-auto gap-4 p-2 sm:p-8 bg-linear-to-b from-background/25 to-background/60;
+    }
+    
 }
 
 @utility card-group-flex{
