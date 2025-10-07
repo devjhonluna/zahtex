@@ -1,6 +1,7 @@
 ---
 import zahtexLogo from "@assets/img/Zahtex.webp";
 import { Image } from "astro:assets";
+import { lazy } from "astro:schema";
 ---
 
 <section class="hero-img">
@@ -11,7 +12,7 @@ import { Image } from "astro:assets";
       class="grid place-items-center text-white mx-auto gap-4 p-2 sm:p-8"
     >
       <picture class="*:w-48 *:sm:w-64 ">
-        <Image src={zahtexLogo} alt="logo" />
+        <Image src={zahtexLogo} alt="logo" loading="lazy" />
       </picture>
       <h1 class="text-header-fluid text-center font-nunito font-bold">
         Taller de Ensamble y corte de prendas de vestir
