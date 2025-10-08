@@ -27,3 +27,18 @@ Interactividad: Alpine JS - Para la interactividad del lado del cliente como men
 Responsividad: Diseño "Mobile-First" que asegura una visualización perfecta en cualquier dispositivo.
 
 Rendimiento: Generación de sitios estáticos optimizados, imágenes comprimidas y carga ultrarrápida gracias a Astro.
+
+## 📷 Screenshots.
+
+### Version Mobiles 
+
+![iPhone 12 Pro-1759878184740](https://github.com/user-attachments/assets/d37bede5-3099-4753-95f7-b49688971513)
+
+### Version Tablet
+
+![iPad-1759878405008](https://github.com/user-attachments/assets/d278f226-dd13-4243-a634-79699e9558f5)
+
+### Version PC 
+
+![Nest Hub Max-1759878772095](https://github.com/user-attachments/assets/a4b8ab4f-5ed4-4df9-95ed-6fa384da6947)
+![Nest Hub Max-1759885323171](https://github.com/user-attachments/assets/02787ddd-b02e-4b09-b594-03a18bfe8b16)
