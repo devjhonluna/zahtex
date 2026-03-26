@@ -5,9 +5,13 @@ import fundareservaBlanco from "@assets/img/galeria/Polo-Fundareserva-Blanco.web
 import bucarosAzul from "@assets/img/galeria/sudadera-bucaros-azul.webp";
 import poloVerde from "@assets/img/galeria/Poloverde.webp";
 
-export default () => ({
+interface gallery {
+    id: number;
+    image: ImageMetadata;
+    alt: string;
+}
 
-  slides: [
+let galleryImage: gallery[] =[
     {
       id: 1,
       image: bucarosAmarillo,
@@ -38,7 +42,6 @@ export default () => ({
       image: poloVerde,
       alt: "polo verde",
     },
-  ], 
-  currentSlide:1,
-
-});
+  ];
+  
+  export default galleryImage;

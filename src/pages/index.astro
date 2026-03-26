@@ -8,7 +8,7 @@ import Header from "@components/header/index.astro";
 import Hero from "@components/hero/index.astro";
 import QuienesSomos from "@components/quienes somos/index.astro";
 import Contacto from "@components/contacto/index.astro";
-import Galeria from "@components/galeria/index.astro";
+import Galeria from "@components/galeria/index.vue";
 import Servicios from "@components/servicios/index.astro";
 ---
 
@@ -22,7 +22,7 @@ import Servicios from "@components/servicios/index.astro";
     <Hero />
     <QuienesSomos />
     <Servicios />
-    <Galeria />
+    <Galeria client:load />
     <Contacto />
   </MainLayout>
   <footer class="text-center text-label-1 font-bold font-merriwather">

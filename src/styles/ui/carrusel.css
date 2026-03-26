@@ -1,23 +1,18 @@
 @layer components {
   .carrusel {
-    display: flex;
-    scrollbar-width: none;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    transition: 0.5s;
-    margin: 2.25rem auto;
-    &:has(.animate-scroll-infinite) {
-      &:hover {
-        > .carrusel-item:not(:hover) {
-          filter: grayscale(1) blur(2px);          
-        }
-      }
-    }
+    /* Es vital que tenga overflow-x: auto o hidden */
+    @apply w-9/10 mx-auto overflow-hidden py-4 @container;
+    
   }
-  .carrusel-item {
-    box-sizing: content-box;
-    scroll-snap-align: start;
-    flex: none;
-    display: flex;
+}
+
+@utility carrusel-wrapper {
+  /* Usamos  grid para un scroll horizontal más natural en autoscroll */
+  @apply grid grid-flow-col auto-cols-[100%] @xl:auto-cols-[50%] @3xl:auto-cols-[calc(100%/3)] @5xl:auto-cols-[25%];
+   &:hover {
+    > li:not(:hover){
+      filter: grayscale(1) blur(2px);   
+    }    
   }
+ 
 }
