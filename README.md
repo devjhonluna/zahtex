@@ -22,11 +22,11 @@ Framework: Astro JS - Framework web para crear sitios rápidos y optimizados.
 
 Estilos: Tailwind CSS - Framework de CSS utilitario para diseñar interfaces de manera rápida y consistente.
 
-Interactividad: Alpine JS - Para la interactividad del lado del cliente como menús desplegables, carruseles y otras interacciones.
+Interactividad: Alpine JS - Para la interactividad del lado del cliente como menús desplegables, otras interacciones y Vue.JS como una mejora para los carruseles infinitos.
 
 Responsividad: Diseño "Mobile-First" que asegura una visualización perfecta en cualquier dispositivo.
 
-Rendimiento: Generación de sitios estáticos optimizados, imágenes comprimidas y carga ultrarrápida gracias a Astro.
+Rendimiento: Tiene un rendimiento del 97 de 100 y una accesibilidad de 100 puntos, cumple con el SEO y las Buenas Prácticas según Lighthouse.
 
 ## 📷 Screenshots.
 
